@@ -1,7 +1,7 @@
 const nameDisplay = document.getElementById('username')
 const textArea = document.getElementById('area')
 const submitBtn = document.getElementById('submitBtn')
-
+const emojiSec = document.getElementById('emojiSection');
 
 const recentReview = document.getElementById('review-display');
 
@@ -61,6 +61,7 @@ submitBtn.addEventListener('click', ()=>{
     nameDisplay.value = '';
     textArea.value='';
     selectedRating =0
+    emojiSec.innerHTML = ""
     fillStars(0);
 })
 stars.forEach( st => {
@@ -90,7 +91,7 @@ function fillStars(rating){
     }
 }
 
-const emojiSec = document.getElementById('emojiSection');
+
 let currGif = document.createElement('img');
 console.log(emojiSec)
 function displayEmoji(rating){
