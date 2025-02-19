@@ -56,7 +56,7 @@ submitBtn.addEventListener('click', ()=>{
     para.classList.add('js-para')
     nameSpan.classList.add('js-name')
 
-    recentReview.appendChild(recReviewCard)
+    recentReview.prepend(recReviewCard)
     
     nameDisplay.value = '';
     textArea.value='';
