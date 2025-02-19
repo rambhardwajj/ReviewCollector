@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #171717;
+    color: #eda400;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 15px 20px;
+    color: white;
+}
+.tab{
+    margin-left: -50px;
+    display: flex;
+    align-items: start;
+    padding: 10px;
+    flex-direction: column;
+    color: white
+}
+.tab-content{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    padding:10px;
+    margin: 10px;
+}
+.sideIcon{
+    /* padding: 10px; */
+    margin:10px;
+}
+
+#log{
+    width: 70px;
+    margin-left: 20px;
+}
+.menu {
+    position: relative;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+}
+.dropdown {
+    position: absolute;
+    background-color:#292828 ;
+    display: none;
+    list-style: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.dropdown li {
+    width: 200px;
+    padding: 20px;
+    cursor: pointer;
+}
+.dropdown li:hover {
+    background-color:#787575 ;
+}
+.menu:hover .dropdown {
+    display: block;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.profile-dropdown {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    background-color:#292828 ;
+    display: none;
+    list-style: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 200px;
+}
+.profile-dropdown li {
+    padding: 10px;
+    cursor: pointer;
+}
+.profile-dropdown li:hover {
+    background-color:#787575 ;
+}
+.profile:hover .profile-dropdown {
+    display: block;
+}
+
+.top-container{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.leftBar{
+    padding: 50px;
+    margin: 20px;
+    border: 1px solid  #474646;
+    border-radius: 5px;
+}
+.rightBar{
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #474646;
+    border-radius: 5px;
+}
+.sec{
+    padding: 20px;
+    margin: 10px;
+    background-color: #292828;
+    border-radius: 5px;
+}
+#username{
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px 5px 5px;
+    border-radius: 5px;
+    border: none;
+}
+#username:hover{
+    background-color: #f6ebc7;
+}
+#area{
+    padding: 10px 40px 10px 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 90%;
+}
+#area:hover{
+    background-color: #f6ebc7;
+}
+.revs{
+    display: flex;
+    justify-content: space-around;
+    min-height: 70vh;
+    max-height: 100vh;
+}
+.review-form{
+    width: 40%;
+    padding:20px;
+    border-radius: 10px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.stars {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.star {
+    color: #b3a6cd;
+    transition: color 0.3s;
+}
+.star.selected {
+    color: rgb(225, 222, 206);
+}
+.star.js-filled {
+    color: gold; /* Filled stars color */
+    font-weight: bolder;
+}
+
+.review-display{
+    width: 50%;
+    padding:20px;
+    border-radius: 10px;
+    background-color: black;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+.button {
+    width: 30%;
+    background: #171717;
+    color: #efa601;
+    margin: 10px 10px 40px 5px;
+    padding: 12px 24px;
+    border: 2px solid #efa601; border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(249, 143, 22, 0.2);
+
+}  
+
+.button:hover {
+    background: linear-gradient(135deg, #2a2a2a, #3b3b3b);
+    border-color: #4a90e2;
+    transform: translateY(-2px);
+}
+.button:active {
+    transform: translateY(30px);
+}
+
+.js-rec-review{
+    position: relative;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #171717;
+    width: 90%;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.js-para{
+    margin-top: 10px;
+    padding: 10px  10px 10px 0px ;
+    font-weight: bold;
+    font-size: 15px;
+}
+.js-rec-review:hover{
+    transform: translate(10px) scale(1.1)
+}
+.js-name{
+    margin-left: 15px;
+    font-style: italic;
+    font-size: 10px;
+}

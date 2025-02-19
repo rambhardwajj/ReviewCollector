@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Page</title>
+    <!-- <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img id="log" src="assets/logo.avif" alt=""> 
+        </div>
+        <div class="menu">
+            <a href="#">Reviews <i class="fas fa-caret-down"></i></a>
+            <ul class="dropdown">
+                <li>Write a Review</li>
+                <li>Customer Reviews</li>
+            </ul>
+        </div>
+        <div class="profile">
+            <img src="assets/profile.jpg" alt="Profile">
+            <ul class="profile-dropdown">
+                <li>My Profile</li>
+            </ul>
+        </div>
+    </nav>
+    <div class="top-container">
+        <div class="leftBar">
+            <div class="tab">
+                <div class="tab-content">
+                    <img class="sideIcon" src="assets/LmNDwHI06eJ7wWjw83j5a.avif" width="40px" alt="">
+                    <span> Welcome </span>
+                </div>
+                <div class="tab-content">
+                    <img class="sideIcon" src="assets/logo.avif" width="40px" alt="">
+                    <span> StudyRoom </span>
+                </div>
+                <div class="tab-content">
+                    <img class="sideIcon" src="assets/uHeNfegU3NtXVi8lRbNuU.avif" width="40px" alt="">
+                    <span> Code Help </span>
+                </div>
+            </div>
+        </div>
+        <div class="rightBar">
+            <section id="write-review" class="sec write-review">
+                <div class="revs">
+                    <div class="review-form">
+                        <h1>Write a Review</h1>
+                        <input id="username" type="text" placeholder="Your Name" >
+                        <textarea id="area" placeholder="Write your review here..." rows="10" ></textarea>
+                        <div id="starRating" class="stars">
+                            <i class="fa-regular fa-star star" data-star="1" id="one-star"></i>
+                            <i class="fa-regular fa-star star" data-star="2" id="two-star"></i>
+                            <i class="fa-regular fa-star star" data-star="3" id="three-star"></i>
+                            <i class="fa-regular fa-star star" data-star="4" id="four-star"></i>
+                            <i class="fa-regular fa-star star" data-star="5" id="five-star"></i>
+                        </div>
+                        <button id="submitBtn" class="button">SUBMIT</button>
+                        <div id="emojiSection" class="emojis">
+                            <!-- <img src="assets/giphy.gif" width="30%" alt=""> -->
+                        </div>
+                    </div>
+                    <div id="review-display" class="review-display">
+                        <h1>Recent Reviews</h1>
+                        <div class="js-rec-review" >
+                            Here are the recent reviews from our students.
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </section>
+            <section id="cust-reviews" class="sec cust-reviews">
+                <h2>Customer Reviews</h2>
+
+                <div class="cust-box">
+                    
+                </div>
+            </section>
+            
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
