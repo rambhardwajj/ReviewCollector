@@ -58,6 +58,10 @@ submitBtn.addEventListener('click', ()=>{
 
     recentReview.appendChild(recReviewCard)
     
+    nameDisplay.value = '';
+    textArea.value='';
+    selectedRating =0
+    fillStars(0);
 })
 stars.forEach( st => {
     st.addEventListener("mouseover", function(){
